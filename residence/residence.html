@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="residence.css">
+      <title>Residence</title>
+    </head>
+    <body>
+        <div class="reside">
+            <div class="haut">
+           <h1>Certificat de residence: les pièces à fournir</h1>
+    
+        </div>
+    
+        <a href="#" data-bs-toggle="modal" data-bs-target="#papiersàfournir"><p>papiers à fournir</p></a>
+        
+
+
+
+<!-- -------------------------modal -->
+
+
+<div class="modal fade" id="papiersàfournir" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Renseignment pour residence</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <h1>les dossiers à fournir</h1>
+            <ul>
+              <li>Carte d'identité nationnale(ou bien)</li>
+              <li>Extrait de naissance</li>
+
+            </ul>
+            
+          </div>
+          <a href="mbaye.html" class="btn btn-primary w-100">Envoyer</a>
+          
+        </form>
+      </div>
+     
+    </div>
+  </div>
+</div>
+
+<!-- ------------lien modal -->
+
+<script>
+    const myModal = document.getElementById('myModal')
+const myInput = document.getElementById('myInput')
+
+myModal.addEventListener('shown.bs.modal', () => {
+  myInput.focus()
+})
+</script>
+
+
+    </body>
+</html>
